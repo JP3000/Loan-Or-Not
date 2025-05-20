@@ -20,3 +20,6 @@ virtualenv/
 # 金融数据文件（根据项目需求）
 /data/
 /db/
+
+echo ".venv/" >> .gitignore
+git add .gitignore
