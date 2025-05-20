@@ -3,13 +3,15 @@ __pycache__
 *.py[cod]
 *$py.class
 env/
-venv/
+.venv/
 virtualenv/
 *.log
 *.sqlite3
 *.csv
 *.DS_Store
 .ipynb_checkpoints
+.venv/db/
+.venv/data/
 
 # 环境变量文件
 .env
@@ -17,5 +19,4 @@ virtualenv/
 
 # 金融数据文件（根据项目需求）
 /data/
-/output/
-db/
+/db/
