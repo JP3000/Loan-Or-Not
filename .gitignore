@@ -1,0 +1,21 @@
+# Python项目常用.gitignore
+__pycache__
+*.py[cod]
+*$py.class
+env/
+venv/
+virtualenv/
+*.log
+*.sqlite3
+*.csv
+*.DS_Store
+.ipynb_checkpoints
+
+# 环境变量文件
+.env
+.env.local
+
+# 金融数据文件（根据项目需求）
+/data/
+/output/
+
