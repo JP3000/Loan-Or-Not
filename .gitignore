@@ -3,7 +3,6 @@ __pycache__
 *.py[cod]
 *$py.class
 env/
-.venv/
 virtualenv/
 *.log
 *.sqlite3
@@ -21,5 +20,3 @@ virtualenv/
 /data/
 /db/
 
-echo ".venv/" >> .gitignore
-git add .gitignore
