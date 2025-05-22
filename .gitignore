@@ -11,6 +11,7 @@ virtualenv/
 .ipynb_checkpoints
 .venv/db/
 .venv/data/
+.venv/model/
 
 # 环境变量文件
 .env
