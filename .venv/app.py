@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 import os
-from sklearn.preprocessing import StandardScaler
 from langchain_community.embeddings import ZhipuAIEmbeddings
 from langchain_chroma import Chroma
 from dotenv import load_dotenv
