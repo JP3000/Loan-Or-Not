@@ -12,6 +12,7 @@ virtualenv/
 .venv/db/
 .venv/data/
 .venv/model/
+.idea/
 
 # 环境变量文件
 .env
