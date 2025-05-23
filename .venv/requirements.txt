@@ -1,6 +1,7 @@
-streamlit
-pandas
-scikit-learn
-langchain-community
-langchain-chroma
-python-dotenv
+streamlit==1.45.1
+pandas==2.2.3
+langchain-community==0.3.23
+langchain-chroma==0.2.4
+dotenv==0.9.9
+zhipuai==2.1.5.20250421
+langchain-zhipuai==0.0.1
