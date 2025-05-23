@@ -1,0 +1,7 @@
+streamlit
+pandas
+scikit-learn
+langchain_community
+chromadb
+python-dotenv
+zhipuai
