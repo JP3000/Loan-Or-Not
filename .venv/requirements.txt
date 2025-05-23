@@ -1,5 +1,6 @@
 streamlit
 pandas
-langchain_community
-langchain_chroma
-dotenv
+scikit-learn
+langchain-community
+langchain-chroma
+python-dotenv
