@@ -1,37 +1,42 @@
-## 基于AI的贷款需求匹配与审批预测的应用工具
-🔍 通过ZHIPU AI大模型匹配与用户的贷款申请相似类别和情绪的案例，通过建立逻辑回归模型对Income, Credit Score, Loan amount, DTI_Ratio, Employment Status进行分析，为用户预测贷款审批结果。
+## AI-Powered Loan Demand Matching and Approval Prediction Application Tool
 
-### 核心功能
-* 语义搜索：输入贷款申请描述，类别，情绪 → 基于ZHIPU AI大模型的案例向量数据库，实时匹配历史相似需求。
-* 智能预测：综合分析Income, Credit Score, Loan amount, DTI_Ratio, Employment Status等关键特征，利用案列训练的逻辑回归模型进行预测，理论上准确率可达90%以上。
+🔍 Matches cases with similar categories and sentiments to the user's loan application through the ZHIPU AI large model. Analyzes Income, Credit Score, Loan Amount, DTI_Ratio, and Employment Status by building a logistic regression model to predict loan approval results for users.
 
-### 安装说明
-git clone 项目仓库
+### Core Features
+
+*   **Semantic Search:** Input loan application description, category, sentiment → Real-time matching of historical similar demands based on the ZHIPU AI large model case vector database.
+*   **Intelligent Prediction:** Comprehensive analysis of key features such as Income, Credit Score, Loan Amount, DTI_Ratio, and Employment Status. Utilizes a logistic regression model trained on cases for prediction, with a theoretical accuracy of over 90%.
+
+### Installation Instructions
+
+Clone the project repository:
+
 ```bash
 git clone https://github.com/JP3000/Loan-Or-Not.git
 cd .venv/
 ```
-安装依赖
+
+Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 使用说明
-.env文件配置
+### Usage Instructions
+Configure the .env file:
 ```bash
 ZHIPUAI_API_KEY=your_api_key
 ```
 
-运行主程序
+Run the main program:
 ```bash
 cd .venv/
 streamlit run app.py
 ```
 
-### 技术栈
-* 申请文本匹配：langchain Zhipuai chroma 向量数据库
-* 金融特征预测：sklearn 逻辑回归模型
-* demo展示：streamlit
+### Technology Stack
+* Application Text Matching: langchain, ZhipuAI, chroma vector database
+* Financial Feature Prediction: sklearn logistic regression model
+* Demo Presentation: streamlit
 
-### 项目展示
-<img src="./demoShow.png" alt="项目演示" width="400" />
+### Project Demo
+<img src="./demoShow.png" alt="Project Demo" width="400" />
