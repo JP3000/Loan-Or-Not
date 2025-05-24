@@ -22,6 +22,9 @@ pip install -r requirements.txt
 ```
 
 ### Usage Instructions
+Dataset Source: [Kaggle](https://www.kaggle.com/datasets/abhishekmishra08/loan-approval-datasets)
+
+
 Configure the .env file:
 ```bash
 ZHIPUAI_API_KEY=your_api_key
