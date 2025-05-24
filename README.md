@@ -29,7 +29,7 @@ streamlit run app.py
 ```
 
 ### 技术栈
-* 申请文本匹配：langchain Zhipuai chroma
+* 申请文本匹配：langchain Zhipuai chroma 向量数据库
 * 金融特征预测：sklearn 逻辑回归模型
 * demo展示：streamlit
 
