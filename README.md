@@ -1,10 +1,37 @@
 ## 基于AI的贷款需求匹配与审批预测的应用工具
-🔍 通过自然语言描述精准定位相似贷款需求，结合多维金融特征分析，为用户智能评估贷款可行性并提供预测建议。
+🔍 通过ZHIPU AI大模型匹配与用户的贷款申请相似类别和情绪的案例，通过建立逻辑回归模型对Income, Credit Score, Loan amount, DTI_Ratio, Employment Status进行分析，为用户预测贷款审批结果。
 
 ### 核心功能
-* 语义搜索：输入贷款申请描述 → 基于智谱AI的text-embedding模型构建向量数据库，实时匹配历史相似需求
-* 风险画像：综合分析年收入、信用评分、债务收入比、就业状态等关键特征，呈现贷款审批类似案例
-* 智能预测：调用Hugging Face金融领域预训练模型，输出审批概率与建议额度
+* 语义搜索：输入贷款申请描述，类别，情绪 → 基于ZHIPU AI大模型的案例向量数据库，实时匹配历史相似需求。
+* 智能预测：综合分析Income, Credit Score, Loan amount, DTI_Ratio, Employment Status等关键特征，利用案列训练的逻辑回归模型进行预测，理论上准确率可达90%以上。
+
+### 安装说明
+git clone 项目仓库
+```bash
+git clone https://github.com/JP3000/Loan-Or-Not.git
+cd .venv/
+```
+安装依赖
+```bash
+pip install -r requirements.txt
+```
+
+### 使用说明
+.env文件配置
+```bash
+ZHIPUAI_API_KEY=your_api_key
+```
+
+运行主程序
+```bash
+cd .venv/
+streamlit run app.py
+```
+
+### 技术栈
+* 申请文本匹配：langchain Zhipuai chroma
+* 金融特征预测：sklearn 逻辑回归模型
+* demo展示：streamlit
 
 ### 项目展示
 <img src="./demoShow.png" alt="项目演示" width="400" />
